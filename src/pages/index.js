@@ -2,8 +2,6 @@ import React from 'react';
 import Link from '@docusaurus/Link';
 import useDocusaurusContext from '@docusaurus/useDocusaurusContext';
 import Layout from '@theme/Layout';
-import RandomQuote from '@site/src/components/HomepageFeatures';
-
 import styles from './index.module.css';
 
 
@@ -12,16 +10,16 @@ export default function Home() {
   return (
     <Layout
       title={`Home`}>
-        <div className="homepage">
+        <div className="centered">
         <img
-            alt = 'Docusaurus with Keytar'
+            alt = 'My Logo'
             className={styles.heroLogo}
             src= {'@site/static/img/iconSmall.jpg'}
             width="200"
             height="200"
           />
           <h1 className="hero__title">{"Hey there name's Jacob"}</h1>
-          <RandomQuote/>
+          <h2>Welcome to my my little corner of the internet</h2>
           <div className={styles.buttons}>
             <Link
               className="button button--secondary button--lg"

@@ -29,10 +29,55 @@
   --docusaurus-highlighted-code-line-bg: rgba(0, 0, 0, 0.3);
 }
 
-/* for centering the home page stuff*/
-.homepage {
+/* for centering the home page other stuff */
+.centered {
   text-align: center;
   margin: auto;
   width: 50%;
-  padding: 10px;;
+  padding: 10px;
+}
+
+.header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-top: 25px;
+  text-decoration: underline;
+  color: #26c2a0;
+}
+
+.left {
+  display: flex;
+  justify-content: left;
+  align-items: left;
+}
+
+.right {
+  display: flex;
+  justify-content: right;
+  align-items: right;
+}
+
+/* have columns on desktop and rows on mobile */
+@media only screen and (min-width: 800px) {
+  .splitscreenDesktop {
+    display: grid;
+    padding-left: 50px;
+    padding-right: 50px;
+    grid-template-columns: 50% 50%;
+  }
+
+  /* About pages css stuff */
+  .aboutUsCenter {
+    margin: auto;
+  }
+}
+
+/* have columns on desktop and rows on mobile */
+@media only screen and (min-width: 500px) {
+  .splitscreenMobile {
+    display: grid;
+    padding-left: 50px;
+    padding-right: 50px;
+  }
 }

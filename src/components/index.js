@@ -11,13 +11,15 @@ export default function RandomQuote() {
     "It seems like we only get one of these life things. We better make it worth something.",
     "In the end all we have is our Name. We better make it mean something.",
     "The small things matter.",
-    "Nothing is ever Simple.",
+    "Nothing is ever simple.",
     "If something is worth doing, it's gonna require you to get your hands dirty.",
     "If it was easy everyone would do it.",
     "Trust is free, but it must be kept.",
     "Embrace the unknown.",
     "Hey did you know this text is random?",
     "Don't let anyone tell you are wasting your time doing something. It is your's to waste.",
+    "Remember to have fun.",
+    "Nothing really lasts so don't worry about it."
   ];
 
   //state stuff
