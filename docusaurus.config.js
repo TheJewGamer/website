@@ -53,7 +53,7 @@ const config = {
         title: "Home",
         logo: {
           alt: 'My Icon',
-          src: 'img/IconSmall.jpg',
+          src: 'img/IconBig.jpg',
         },
         items: [
           { to: '/aboutMe', label: 'About Me', position: 'left' },
