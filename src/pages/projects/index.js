@@ -3,7 +3,6 @@ import Layout from '@theme/Layout';
 import Grid from '@mui/material/Grid';
 
 //pictures
-import profilePicture from '@site/static/img/picture.jpg';
 import rulesPicture from '@site/static/projectImages/theRulesHaveChanged.jpg'
 import discordBot from '@site/static/projectImages/discordBot.jpg'
 import botWebsite from '@site/static/projectImages/botWebsite.png'
@@ -19,7 +18,7 @@ export default function Projects() {
                 <Grid container spacing={5} columns={10} direction={"row"} justifyContent={"center"} align-items={'end'}>
                     <Grid item lg={3} xs={12}>
                         <div className='projectImageContainer'>
-                            <a href='something'>
+                            <a href='projects/changetherules'>
                                 <img src={rulesPicture} alt="The Rules Have Changed Logo" />
                                 <div class="projectPictureText">
                                     <h1>Change The Rules</h1>
