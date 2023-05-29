@@ -42,6 +42,10 @@
   margin: auto;
 }
 
+.tableCenter {
+  text-align: center
+}
+
 .circleImage {
   border-radius: 50%;
 }
@@ -77,4 +81,24 @@
     padding-left: 50px;
     padding-right: 50px;
   }
+}
+
+.projectImageContainer {
+  text-align: center;
+  width: 80%;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.projectImageContainer:hover {
+  box-shadow: -12px 0px 39px 10px rgba(38, 194, 160, 0.64);
+  -webkit-box-shadow: -12px 0px 39px 10px rgba(38, 194, 160, 0.64);
+  -moz-box-shadow: -12px 0px 39px 10px rgba(38, 194, 160, 0.64);
+  transform: scale(1.025);
+}
+
+.projectPictureText {
+  text-align: left;
+  padding: 10px 20px;
+  background-color: #26c2a0;
+  color: white;
 }
