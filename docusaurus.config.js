@@ -1,4 +1,4 @@
-// @ts-check
+// @ts-nocheck
 // Note: type annotations allow type checking and IDEs autocompletion
 
 const lightCodeTheme = require('prism-react-renderer/themes/github');
@@ -53,7 +53,7 @@ const config = {
         title: "Home",
         logo: {
           alt: 'My Icon',
-          src: 'img/IconBig.jpg',
+          src: 'img/iconBig.jpg',
         },
         items: [
           { to: '/aboutMe', label: 'About Me', position: 'left' },
@@ -76,6 +76,10 @@ const config = {
       prism: {
         theme: lightCodeTheme,
         darkTheme: darkCodeTheme,
+      },
+      colorMode: {
+        disableSwitch: false,
+        respectPrefersColorScheme: true,
       },
     }),
 };
