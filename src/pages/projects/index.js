@@ -8,15 +8,14 @@ import discordBot from '@site/static/projectImages/discordBot.jpg'
 import botWebsite from '@site/static/projectImages/botWebsite.png'
 import personalWebsite from '@site/static/projectImages/personalWebsite.png'
 
-
 export default function Projects() {
     return (
         <Layout title='Projects'>
             <h1 className='header'>My Projects</h1>
-            <div className='tableCenter'>
-                {/*Blackops3 mod*/}
-                <Grid container spacing={5} columns={10} direction={"row"} justifyContent={"center"} align-items={'end'}>
-                    <Grid item lg={3} xs={12}>
+            <div className='tableCenterMobile'>
+                {/*Black ops 3 mod*/}
+                <Grid container spacing={5} columns={10} direction={"row"} justifyContent={"center"}>
+                    <Grid item lg={3.5} xs={12}>
                         <div className='projectImageContainer'>
                             <a href='projects/changetherules'>
                                 <img src={rulesPicture} alt="The Rules Have Changed Logo" />
@@ -31,7 +30,7 @@ export default function Projects() {
                     {/*thejewbot*/}
                     <Grid item lg={3} xs={12}>
                         <div className='projectImageContainer'>
-                            <a href='something'>
+                            <a href='projects/discordBot'>
                                 <img src={discordBot} alt="Me" />
                                 <div class="projectPictureText">
                                     <h1>Discord Bot</h1>
@@ -44,7 +43,7 @@ export default function Projects() {
                     {/*bot website*/}
                     <Grid item lg={3} xs={12}>
                         <div className='projectImageContainer'>
-                            <a href='something'>
+                            <a href='projects/botWebsite'>
                                 <img src={botWebsite} alt="Discord Bot Website Picture" />
                                 <div class="projectPictureText">
                                     <h1>Discord Bot Website</h1>
@@ -57,7 +56,7 @@ export default function Projects() {
                     {/*this website*/}
                     <Grid item lg={3} xs={12}>
                         <div className='projectImageContainer'>
-                            <a href='something'>
+                            <a href='projects/personalWebsite'>
                                 <img src={personalWebsite} alt="Personal Website Picture" />
                                 <div class="projectPictureText">
                                     <h1>My Personal Website</h1>

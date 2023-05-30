@@ -42,8 +42,13 @@
   margin: auto;
 }
 
-.tableCenter {
-  text-align: center
+
+/* make sure the table is centered no matter what the screen size is */
+@media only screen and (min-width: 300px) and (max-width: 1180px) {
+  .tableCenterMobile {
+    text-align: center;
+    padding-left: 125px;
+  }
 }
 
 .circleImage {
@@ -53,10 +58,9 @@
 .header {
   display: flex;
   justify-content: center;
-  align-items: center;
   padding-top: 25px;
   text-decoration: underline;
-  color: #26c2a0;
+  color: white;
 }
 
 /* have columns on desktop and rows on mobile */
@@ -101,4 +105,34 @@
   padding: 10px 20px;
   background-color: #26c2a0;
   color: white;
+}
+
+.projectPageButtons {
+  text-align: center;
+  margin: auto;
+  width: 50%;
+  padding: 10px;
+}
+
+.projectPageButtons:hover {
+  transform: scale(1.2);
+}
+
+.projectPageButtonsText {
+  border-radius: 16px;
+  background-color: #26c2a0;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  margin: auto;
+  width: 15%;
+}
+
+.projectPageButtonsText:hover {
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  margin: auto;
+  width: 15%;
+  text-decoration: none;
 }
