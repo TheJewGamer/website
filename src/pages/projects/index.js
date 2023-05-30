@@ -17,7 +17,7 @@ export default function Projects() {
                 <Grid container spacing={5} columns={10} direction={"row"} justifyContent={"center"}>
                     <Grid item lg={3.5} xs={12}>
                         <div className='projectImageContainer'>
-                            <a href='projects/changetherules'>
+                            <a href='/changetherules'>
                                 <img src={rulesPicture} alt="The Rules Have Changed Logo" />
                                 <div class="projectPictureText">
                                     <h1>Change The Rules</h1>
@@ -30,7 +30,7 @@ export default function Projects() {
                     {/*thejewbot*/}
                     <Grid item lg={3} xs={12}>
                         <div className='projectImageContainer'>
-                            <a href='projects/discordBot'>
+                            <a href='/discordBot'>
                                 <img src={discordBot} alt="Me" />
                                 <div class="projectPictureText">
                                     <h1>Discord Bot</h1>
@@ -43,7 +43,7 @@ export default function Projects() {
                     {/*bot website*/}
                     <Grid item lg={3} xs={12}>
                         <div className='projectImageContainer'>
-                            <a href='projects/botWebsite'>
+                            <a href='/botWebsite'>
                                 <img src={botWebsite} alt="Discord Bot Website Picture" />
                                 <div class="projectPictureText">
                                     <h1>Discord Bot Website</h1>
@@ -56,7 +56,7 @@ export default function Projects() {
                     {/*this website*/}
                     <Grid item lg={3} xs={12}>
                         <div className='projectImageContainer'>
-                            <a href='projects/personalWebsite'>
+                            <a href='/personalWebsite'>
                                 <img src={personalWebsite} alt="Personal Website Picture" />
                                 <div class="projectPictureText">
                                     <h1>My Personal Website</h1>
