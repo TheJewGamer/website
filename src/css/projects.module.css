@@ -1,0 +1,35 @@
+/* 
+  This is the CSS for project landing page
+*/
+
+.projectCardText {
+  color: white;
+  background-color: #26c2a0;
+}
+
+.projectCard:hover {
+  opacity: 70%;
+}
+
+.projectCardButton {
+  color: black;
+}
+
+/* Binds items in div to 16:9 resolution based on screen size */
+.container {
+  position: relative;
+  overflow: hidden;
+  width: 100%;
+  padding-top: 56.25%; /* 16:9 Aspect Ratio (divide 9 by 16 = 0.5625) */
+}
+
+/* Makes the youtube video embed look good on mobile */
+.responsiveEmbed {
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  width: 100%;
+  height: 100%;
+}

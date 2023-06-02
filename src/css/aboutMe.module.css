@@ -1,0 +1,26 @@
+/* 
+  This is the CSS for the about me page
+*/
+
+/* have columns on desktop and rows on mobile */
+@media only screen and (min-width: 996px) {
+  .splitscreenDesktop {
+    display: grid;
+    grid-template-columns: 50% 50%;
+    padding-left: 50px;
+    padding-right: 50px;
+  }
+}
+
+/* provides some white space between text and edge on mobile */
+@media only screen and (max-width: 996px) {
+  .mobilePadding {
+    padding-left: 5%;
+    padding-right: 5%;
+  }
+}
+
+/* for centering text in a div */
+.blockCenter {
+  margin: auto;
+}

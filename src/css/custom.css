@@ -37,22 +37,10 @@
   padding: 10px;
 }
 
-/* for centering text in a div */
-.blockCenter {
-  margin: auto;
-}
-
-
-/* make sure the table is centered no matter what the screen size is */
-@media only screen and (min-width: 300px) and (max-width: 1180px) {
-  .tableCenterMobile {
-    text-align: center;
-    padding-left: 125px;
-  }
-}
-
 .circleImage {
   border-radius: 50%;
+  max-width: 100%;
+  height: auto;
 }
 
 .header {
@@ -63,35 +51,12 @@
   color: white;
 }
 
-/* have columns on desktop and rows on mobile */
-@media only screen and (min-width: 800px) {
-  .splitscreenDesktop {
-    display: grid;
-    padding-left: 50px;
-    padding-right: 50px;
-    grid-template-columns: 50% 50%;
-  }
-
-  /* About pages css stuff */
-  .aboutUsCenter {
-    margin: auto;
-  }
-}
-
-.projectCard {
-  color: white;
-  background-color: #26c2a0;
-}
-
-.projectCard:hover {
-  color: black;
-}
-
 .buttonCenter {
   display: flex;
   align-items: center;
   justify-content: center;
 }
+
 
 .buttonsStyle {
   color: white;
@@ -99,6 +64,13 @@
   border-radius: 16px;
   font-size: 25px;
   padding: 5px 10px;
+}
+
+/* Make the buttons look good on mobile  */
+@media only screen and (max-width: 996px) {
+  .buttonsStyle {
+    font-size: 16px;
+  }
 }
 
 .buttonsStyle:hover {
