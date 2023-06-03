@@ -18,7 +18,9 @@ export default function AboutMe() {
                 <div className='centered'>
                     <img className='circleImage' src={profilePicture} alt="Me" />
                     {/*quote stuff*/}
-                    <RandomQuote />
+                    <div className={styles.quoteContainer}>
+                        <RandomQuote />
+                    </div>
                 </div>
 
                 {/*right/bottom side*/}

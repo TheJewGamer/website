@@ -1,0 +1,21 @@
+/* 
+  This is the CSS for business card page
+*/
+
+
+.fadeAnimation {
+  opacity: 0;
+  animation: fadeInAnimation ease 5s;
+  animation-iteration-count: 1;
+  animation-fill-mode: forwards;
+}
+
+@keyframes fadeInAnimation {
+  0% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}

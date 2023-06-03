@@ -19,7 +19,8 @@ export default function RandomQuote() {
     "Hey did you know this text is random?",
     "Don't let anyone tell you are wasting your time doing something. It is your's to waste.",
     "Remember to have fun.",
-    "Nothing really lasts so don't worry about it."
+    "Nothing really lasts so don't worry about it.",
+    "Water in your whisky is bad, but Whisky in your water is good."
   ];
 
   //state stuff
@@ -35,8 +36,6 @@ export default function RandomQuote() {
     //get random quote
     let randIndex = Math.floor(Math.random() * quoteList.length);
     let quoteToType = quoteList[randIndex]
-    console.log(quoteToType);
-
     let timer;
 
     //not started so write the text
@@ -47,11 +46,9 @@ export default function RandomQuote() {
       i++;
       if (i === quoteToType.length - 1) clearInterval(timer);
       setText((prev) => prev + quoteToType[i]);
-    }, 50);
+    }, 30);
     return (
       <h2>{quote}</h2>
     );
   }
-
-
 }

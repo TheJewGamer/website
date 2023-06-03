@@ -6,8 +6,7 @@ import Card from '@mui/material/Card';
 import CardContent from '@mui/material/CardContent';
 import CardMedia from '@mui/material/CardMedia';
 import { CardActionArea } from '@mui/material';
-import CardActions from '@mui/material/CardActions';
-import Button from '@mui/material/Button';
+import { styled } from '@mui/system';
 
 //pictures
 import rulesPicture from '@site/static/projectImages/theRulesHaveChanged.jpg'
@@ -20,6 +19,16 @@ import ghubScript from '@site/static/projectImages/ghubScript.png'
 //css
 import styles from '@site/src/css/projects.module.css'
 
+//custom style for the Cards
+const CardCustom = styled(Card)(() => ({
+    width: 345,
+    boxShadow: "-15px 0px #1d8971",
+    color:"#26c2a0", //hides the underline on hover
+    '&:hover':{
+        backgroundColor: "black",
+        scale: "95%"
+    }
+}));
 
 export default function Projects() {
     return (
@@ -28,7 +37,7 @@ export default function Projects() {
             <Grid container direction={"row"} justifyContent={"center"} rowSpacing={5} columnSpacing={{ xs: 1, sm: 20, md: 50 }}>
                 {/*Black ops 3 mod*/}
                 <Grid>
-                    <Card sx={{ width: 345 }}>
+                    <CardCustom>
                         <CardActionArea href={useBaseUrl("projects/changeTheRules")} className={styles.projectCard}>
                             <CardMedia
                                 sx={{ height: 300 }}
@@ -41,13 +50,12 @@ export default function Projects() {
                                 <h3 className={styles.projectCardButton}>More Info</h3>
                             </CardContent>
                         </CardActionArea>
-                    </Card>
-
+                    </CardCustom>
                 </Grid>
 
                 {/*thejewbot*/}
                 <Grid>
-                    <Card sx={{ width: 345 }}>
+                    <CardCustom>
                         <CardActionArea href={useBaseUrl("projects/discordBot")} className={styles.projectCard}>
                             <CardMedia
                                 sx={{ height: 300 }}
@@ -60,12 +68,12 @@ export default function Projects() {
                                 <h3 className={styles.projectCardButton}>More Info</h3>
                             </CardContent>
                         </CardActionArea>
-                    </Card>
+                    </CardCustom>
                 </Grid>
 
                 {/*bot website*/}
                 <Grid>
-                    <Card sx={{ width: 345 }}>
+                    <CardCustom>
                         <CardActionArea href={useBaseUrl("projects/botWebsite")} className={styles.projectCard}>
                             <CardMedia
                                 sx={{ height: 300 }}
@@ -78,12 +86,12 @@ export default function Projects() {
                                 <h3 className={styles.projectCardButton}>More Info</h3>
                             </CardContent>
                         </CardActionArea>
-                    </Card>
+                    </CardCustom>
                 </Grid>
 
                 {/*this website*/}
                 <Grid>
-                    <Card sx={{ width: 345 }}>
+                    <CardCustom>
                         <CardActionArea href={useBaseUrl("projects/personalWebsite")} className={styles.projectCard}>
                             <CardMedia
                                 sx={{ height: 300 }}
@@ -96,12 +104,12 @@ export default function Projects() {
                                 <h3 className={styles.projectCardButton}>More Info</h3>
                             </CardContent>
                         </CardActionArea>
-                    </Card>
+                    </CardCustom>
                 </Grid>
 
                 {/*Valorant Strat Site*/}
                 <Grid>
-                    <Card sx={{ width: 345 }}>
+                    <CardCustom>
                         <CardActionArea href={useBaseUrl("projects/valorantStratSite")} className={styles.projectCard}>
                             <CardMedia
                                 sx={{ height: 300 }}
@@ -114,12 +122,12 @@ export default function Projects() {
                                 <h3 className={styles.projectCardButton}>More Info</h3>
                             </CardContent>
                         </CardActionArea>
-                    </Card>
+                    </CardCustom>
                 </Grid>
 
                 {/*Logitech gHub profile adder*/}
                 <Grid>
-                    <Card sx={{ width: 345 }}>
+                    <CardCustom>
                         <CardActionArea href={useBaseUrl("projects/ghubGamePass")} className={styles.projectCard}>
                             <CardMedia
                                 sx={{ height: 300 }}
@@ -132,9 +140,8 @@ export default function Projects() {
                                 <h3 className={styles.projectCardButton}>More Info</h3>
                             </CardContent>
                         </CardActionArea>
-                    </Card>
+                    </CardCustom>
                 </Grid>
-
             </Grid>
         </Layout >
     );

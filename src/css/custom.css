@@ -64,6 +64,8 @@
   border-radius: 16px;
   font-size: 25px;
   padding: 5px 10px;
+  box-shadow: -5px 5px #1d8971;
+  font-weight: bold;
 }
 
 /* Make the buttons look good on mobile  */
@@ -74,7 +76,8 @@
 }
 
 .buttonsStyle:hover {
-  color: black;
   text-decoration: none;
-  transform: scale(1.1);
+  transform: scale(.9);
+  opacity: 70%;
+  color: white;
 }
