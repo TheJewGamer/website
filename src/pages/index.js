@@ -15,8 +15,8 @@ export default function Home() {
         <div className='buttonCenter'>
           <Link
             className="buttonsStyle"
-            to="/projects/">
-            See what I have been up to
+            to="/aboutMe/">
+            Explore
           </Link>
         </div>
       </div>

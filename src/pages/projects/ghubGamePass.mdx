@@ -6,13 +6,13 @@ hide_table_of_contents: true
 import Link from '@docusaurus/Link';
 
 # gHub Gamepass Profile Creator
-I use some Logitech peripherals such as their mice and they have software called [gHub](https://www.logitechg.com/en-us/innovation/g-hub.html) which also you to have the buttons on your act as different key presses depending on the game you are playing. I also use Xbox Gamepass to play some games and because of how the gHub software is developed it cannot add these games as profiles. There is a way around this and I made this script to assist me in this.
+I use some Logitech peripherals such as their mice and they have software called [gHub](https://www.logitechg.com/en-us/innovation/g-hub.html) which allows you to have the buttons on your mouse or keyboard act as different key presses depending on the game you are playing. I also use Xbox Game Pass to play some games and because of how the gHub software is developed Game Pass games cannot be added to gHub. There is a workaround to add Game Pass games to gHub however it is not the easiest thing to do and is a bit time consuming. Therefore, I made this script to assist me in adding Game Pass games to gHub.
 
-## Making the Script
-The script is written in python and simple creates that database entry that needs to be added to your gHub settings file. The script also does nice things like preventing an extra profile from existing in gHub and adds an icon for the profile. 
+## About the Script
+The script is written in Python and simply creates a database entry that you can then add to your gHub setting file. The script simplifies the process of creating this database entry significantly as it only requires the user to select the top-level folder where the game is located. Once this folder is selected the script automatically finds the applications in the provided folder and then allows the user to choose what applications should cause this profile to be active. Then the script will allow the user to look through all the images present in the provided folder and choose one to be the icon of the profile in gHub. Lastly by using the script it prevents an empty profile from being created for this game which would cause unnecessary clutter.
 
 ## gHub Gamepass Profile Code
-You can view the code for this script on my Github [here](https://github.com/TheJewGamer/gHub_GamePass_Profile_Creator). Feel free to run it yourself if you also have this issue with gHub.
+You can view the code for this script on my Github [here](https://github.com/TheJewGamer/gHub_GamePass_Profile_Creator). Feel free to run it yourself.
 
 <div className='buttonCenter'>
     <Link
