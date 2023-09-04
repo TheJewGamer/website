@@ -10,8 +10,8 @@ const config = {
   favicon: 'img/favicon.ico',
 
   // Set the production url of your site here
-  url: 'https://thejewgamer.github.io/',
-  baseUrl: '/website/',
+  url: 'https://jacobcohen.work',
+  baseUrl: '/',
   trailingSlash: false,
 
   // GitHub pages deployment config.
