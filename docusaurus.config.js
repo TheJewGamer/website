@@ -11,7 +11,7 @@ const config = {
 
   // Set the production url of your site here
   url: 'https://jacobcohen.work',
-  baseUrl: '/',
+  baseUrl: '/website/',
   trailingSlash: false,
 
   // GitHub pages deployment config.
