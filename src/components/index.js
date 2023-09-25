@@ -20,7 +20,10 @@ export default function RandomQuote() {
     "Don't let anyone tell you are wasting your time doing something. It is your's to waste.",
     "Remember to have fun.",
     "Nothing really lasts so don't worry about it.",
-    "Water in your whisky is bad, but Whisky in your water is good."
+    "Water in your whisky is bad, but Whisky in your water is good.",
+    "Contrary to popular belief a printer's main function is to not print.",
+    "Don't take life too seriously",
+    "No task is ever below you no matter how far up the ladder you've climbed."
   ];
 
   //state stuff

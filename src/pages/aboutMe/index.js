@@ -41,13 +41,16 @@ export default function AboutMe() {
 
                     <br/>
 
-                    <div className='buttonCenter'>
+                    <div class='buttonCenter'>
                         <Link
                             className="buttonsStyle"
                             to="https://www.linkedin.com/in/jcohen120/">
                             LinkedIn
                         </Link>
                     </div>
+
+                    <br/>
+
                 </div>
             </div>
         </Layout>

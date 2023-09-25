@@ -10,6 +10,7 @@ import { styled } from '@mui/system';
 
 //pictures
 import rulesPicture from '@site/static/projectImages/theRulesHaveChanged.jpg'
+import UndergroundLivingPicture from '@site/static/projectImages/underGroundLiving.png'
 import discordBot from '@site/static/projectImages/discordBot.jpg'
 import botWebsite from '@site/static/projectImages/botWebsite.png'
 import personalWebsite from '@site/static/projectImages/personalWebsite.png'
@@ -46,7 +47,25 @@ export default function Projects() {
                             />
                             <CardContent className={styles.projectCardText}>
                                 <h1>Change The Rules</h1>
-                                <p>A gameplay mod for BlackOps</p>
+                                <p>A gameplay mod for BlackOps III.</p>
+                                <h3 className={styles.projectCardButton}>More Info</h3>
+                            </CardContent>
+                        </CardActionArea>
+                    </CardCustom>
+                </Grid>
+
+                {/*underground living datapack*/}
+                <Grid>
+                    <CardCustom>
+                        <CardActionArea href={useBaseUrl("projects/undergroundLiving")} className={styles.projectCard}>
+                            <CardMedia
+                                sx={{ height: 300 }}
+                                image={UndergroundLivingPicture}
+                                alt="Underground Living"
+                            />
+                            <CardContent className={styles.projectCardText}>
+                                <h1>Underground Living</h1>
+                                <p>A datapack for minecraft which forces players to live underground.</p>
                                 <h3 className={styles.projectCardButton}>More Info</h3>
                             </CardContent>
                         </CardActionArea>
@@ -64,7 +83,7 @@ export default function Projects() {
                             />
                             <CardContent className={styles.projectCardText}>
                                 <h1>Discord Bot</h1>
-                                <p>A personal Discord bot I made</p>
+                                <p>A personal Discord bot I made.</p>
                                 <h3 className={styles.projectCardButton}>More Info</h3>
                             </CardContent>
                         </CardActionArea>
@@ -143,6 +162,7 @@ export default function Projects() {
                     </CardCustom>
                 </Grid>
             </Grid>
+            <br/>
         </Layout >
     );
 }
